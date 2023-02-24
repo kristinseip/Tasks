@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" href="/static/style.css" th:href="'/style.css'">
+<head>
+    <meta charset="UTF-8">
+    <title>Uppgifter</title>
+</head>
+<body>
+
+<h1>Uppgifter du kan göra hemma</h1>
+
+  <h2>Sök uppgifter</h2>
+
+<div class="wrapper">
+  <div class="container">
+
+    <div class="article">
+
+      <div class="box box1">
+        <form action="/task" method="post">
+          <input type="text" name="task" placeholder="uppgift" autofocus >
+          <input class="buttonstyle" type="submit" value="Lägg till">
+        </form></div>
+
+      <div class="box box2">
+        <ol>
+          <h1 th:text="${taskList.name} + 's lista'" ></h1>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-2">
+    <div class="container-2-article-2">
+      <div class="inputcontainer">
+        <ol>
+          <li class="liststyling" th:each="task : ${taskList.tasks}"><a th:text="${task}")></a> </li>
+        </ol> </div>
+      <div class="inputputcontainer2">
+        <a href="/done">
+          <input class="fixedbutton" type="submit" value="Gå vidare">
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

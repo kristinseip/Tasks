@@ -1,0 +1,5 @@
+package com.kristin.Tasks;
+import org.springframework.data.repository.CrudRepository;
+
+public interface UserRepository extends CrudRepository <User, Long>{
+}

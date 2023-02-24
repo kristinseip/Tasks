@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<link href="login.css" rel="stylesheet" type="text/css" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+<form action="/" th:object="${logIn}" method="post">
+  <label><b>Användarnamn</b></label>
+  <input type="text" th:field="*{username}"placeholder="Skriv in användarnamn" name="uname" required>
+
+  <label><b>Lösenord</b></label>
+  <input type="password" th:field="*{password}" placeholder="Skriv in lösenord" name="psw" required>
+
+  <button type="submit">Login</button>
+  <label>
+    <input type="checkbox" checked="checked" name="remember"> Kom ihåg mig
+  </label>
+
+
+<div class="container">
+  <button type="button" class="cancelbtn">Cancel</button>
+  <span class="psw"> <a href="#"> Glömt lösenord?</a></span>
+</div>
+</form>
+</body>
+</html>

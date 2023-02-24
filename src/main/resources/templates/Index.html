@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" href="/static/style.css" th:href="'/style.css'">
+<head>
+    <meta charset="UTF-8">
+    <title>Uppgifter</title>
+</head>
+<body>
+
+<h1>Uppgifter du kan göra hemma</h1>
+
+  <h2>Sök uppgifter</h2>
+
+<form class="tasks" th:action="@{/}" th:method="get">
+  <input type="search" size="30" class="form-control" id="keyword" name="keyword" placeholder="Sök uppgifter"
+         th:value="${keyword}">
+  <button id="search" type="submit">
+    <i data-text="Search">Sök här
+    </i>
+  </button>
+</form>
+<h2>Lägg till uppgifter</h2>
+<form class="tasks" th:action="@{/task}" th:method="get">
+  <input type="text" size="30" class="form-control" id="newTask" name="newTask" placeholder="Skriv här"
+         th:value="${keyword}">
+  <button id="submit" type="submit">
+    <i data-text="Submit"> Lägg till
+    </i>
+  </button>
+
+</form>
+
+
+</body>
+</html>

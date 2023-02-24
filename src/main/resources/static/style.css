@@ -1,0 +1,65 @@
+body{
+background-image: url("cleaning.jpg");
+font-family: Verdana;
+background-color: #D4E4E8;
+
+}
+
+h1{
+font-size: 40px;
+font-weight: 700px;
+display: flex;
+justify-content: center;
+}
+
+
+/*classes*/
+.tasks{
+      display: flex;
+      justify-content: flex-start;
+      border-radius: 60px
+      width: 80px;
+      height: 50px
+      margin-right: 2%;
+      }
+
+input{
+        font-size: 1.2em;
+        padding: 8px 15px;
+        height:30 px
+        display: flex;
+        justify-content: flex-end;
+        background-color: #F9F8F4;
+        border-radius: 60px
+      }
+
+button,.addButton{
+        font-size: 1em;
+        padding: 8px 15px;
+        width: 100px;
+        height: 50px
+        display: flex;
+        justify-content: flex-end;
+        background-color:#9FE898;
+        border-radius: 50px
+
+      }
+
+      .addButton{
+       margin-top: 20px;
+       display: flex;
+       justify-content: flex-end;
+
+      }
+      .article{
+      max-width: 400px;
+      }
+
+
+      .box{
+      }
+
+      .box1{
+      }
+
+
